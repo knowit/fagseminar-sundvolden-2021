@@ -1,14 +1,14 @@
 export const villages = [];
 
-const year = '2020';
+const year = '2021';
 const season = {
-  short: 'høst',
-  shortCapitalized: 'Høst',
-  long: 'høsten',
-  longCapitalized: 'Høsten',
+  short: 'vår',
+  shortCapitalized: 'Vår',
+  long: 'våren',
+  longCapitalized: 'Våren',
 };
-const startDate = '29. oktober';
-const endDate = '29. oktober';
+const startDate = '27. mai';
+const endDate = '27. mai';
 
 const cancelledEventStartDate = '15. oktober';
 const cancelledEventEndDate = '18. oktober';
@@ -57,8 +57,8 @@ const viewmodel = {
   },
   days: [
     {
-      date: '29',
-      label: 'Torsdag 29.10',
+      date: '27',
+      label: 'Torsdag 27.05',
     }
   ],
   schedules: [],
