@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/knowit/online-fagseminar-oktober-2020.svg?branch=master)](https://travis-ci.org/knowit/online-fagseminar-oktober-2020)
+[![Build Status](https://travis-ci.org/knowit/online-fagseminar-mai-2021.svg?branch=master)](https://travis-ci.org/knowit/online-fagseminar-mai-2021)
 
 # Knowit Online Fagseminar Høst 2020
 
