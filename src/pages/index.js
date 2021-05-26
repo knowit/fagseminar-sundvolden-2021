@@ -41,7 +41,7 @@ const Frontpage = () => (
         <Paragraph>
           <h3>På grunn av fortsatt pågående pandemi holder vi dette fagseminaret online!</h3><br/><br/>
           {`Knowit Objectnet arrangerer to fagseminarer årlig. Det er de ansatte
-          selv som lager programmet.
+          selv som lager programmet.`}
         </Paragraph>
         <Paragraph>
           {`Tidligere har vi besøkt ${eventData.cities.join(', ')} etc.`}
