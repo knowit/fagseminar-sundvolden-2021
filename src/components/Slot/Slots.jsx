@@ -180,7 +180,19 @@ const Slots = ({
   }
 
   const groupedByStart = groupBy(
-    slotsMappedByRoom(activeDay, slots),
+    slotsMappedByRoom(activeDay, slots).sort(function(a, b) {
+      var roomA = a.room; // ignore upper and lowercase
+      var roomB = b.room; // ignore upper and lowercase
+      if (roomA < roomB) {
+        return -1;
+      }
+      if (roomA > roomB) {
+        return 1;
+      }
+
+      // names must be equal
+      return 0;
+    }),
     slot => slot.start,
   );
   return Object.keys(groupedByStart)
