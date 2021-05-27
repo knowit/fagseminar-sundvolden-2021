@@ -19,10 +19,10 @@ const NextUp = () => {
   }, []);
   const nextUpDates = slots
     .map(slot => {
-      const startContainsColon = slot.start.includes(':');
-      const splittedStart = slot.start.split(':');
-      const hour = startContainsColon ? splittedStart[0] : slot.start;
-      const minute = startContainsColon ? splittedStart[1] : slot.start;
+      const startContainsDot = slot.start.includes('.');
+      const splittedStart = slot.start.split('.');
+      const hour = splittedStart[0];
+      const minute = splittedStart[1];
 
       return {
         ...slot,
