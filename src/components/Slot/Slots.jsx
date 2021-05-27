@@ -181,8 +181,8 @@ const Slots = ({
 
   const groupedByStart = groupBy(
     slotsMappedByRoom(activeDay, slots).sort(function(a, b) {
-      var roomA = a.room; // ignore upper and lowercase
-      var roomB = b.room; // ignore upper and lowercase
+      var roomA = a.room;
+      var roomB = b.room;
       if (roomA < roomB) {
         return -1;
       }
