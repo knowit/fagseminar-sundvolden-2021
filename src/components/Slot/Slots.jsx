@@ -182,7 +182,7 @@ const Slots = ({
   const groupedByStart = groupBy(
     slotsMappedByRoom(activeDay, slots).sort(function(a, b) {
       var roomA = a.room;
-      var roomB = b.room;
+      var roomB = b.room; //Sorting
       if (roomA < roomB) {
         return -1;
       }
