@@ -21,7 +21,7 @@ export const eventData = {
   city: 'Online',
   country: 'Norway',
   year,
-  monthNumber: 10,
+  monthNumber: 5,
   season,
   startDate,
   endDate,
@@ -59,7 +59,7 @@ const viewmodel = {
     {
       date: '27',
       label: 'Torsdag 27.05',
-    }
+    },
   ],
   schedules: [],
   talks: {},
