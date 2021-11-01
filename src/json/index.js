@@ -2,13 +2,13 @@ export const villages = [];
 
 const year = '2021';
 const season = {
-  short: 'vår',
-  shortCapitalized: 'Vår',
-  long: 'våren',
-  longCapitalized: 'Våren',
+  short: 'høst',
+  shortCapitalized: 'Høst',
+  long: 'høsten',
+  longCapitalized: 'Høsten',
 };
-const startDate = '27. mai';
-const endDate = '27. mai';
+const startDate = '19. november';
+const endDate = '21. november';
 
 const cancelledEventStartDate = '15. oktober';
 const cancelledEventEndDate = '18. oktober';
@@ -16,12 +16,14 @@ const cancelledEventCity = 'Roma';
 const cancelledEventCountry = 'Italia';
 
 export const eventData = {
-  date: `${startDate} ${year}`,
-  longDate: `${startDate} ${year}`,
-  city: 'Online',
+  date: `${startDate} - ${endDate} ${year}`,
+  longDate: `${startDate} - ${endDate} ${year}`,
+  venue: 'Sundvolden hotell',
+  adress: 'Dronningveien 2, 3531 Krokkleiva',
+  city: 'Sundvolden',
   country: 'Norway',
   year,
-  monthNumber: 5,
+  monthNumber: 11,
   season,
   startDate,
   endDate,
@@ -52,13 +54,21 @@ const viewmodel = {
   },
   meta: {
     title: `Knowit Objectnet Fagseminar ${eventData.year}`,
-    description: `Knowit Objectnet arrangerer to fagseminarer årlig. Det er de ansatte selv som lager programmet. ${season.longCapitalized} ${year} vil den bli avholdt ${eventData.date} online.`,
+    description: `Knowit Objectnet arrangerer to fagseminarer årlig. Det er de ansatte selv som lager programmet. ${season.longCapitalized} ${year} vil den bli avholdt ${eventData.date} på ${eventData.city}, ${eventData.country}.`,
     keywords: `Fagseminar, ${eventData.city}, ${eventData.country}, Fag, Foredrag`,
   },
   days: [
     {
-      date: '27',
-      label: 'Torsdag 27.05',
+      date: '19',
+      label: 'Fredag 19.11',
+    },
+    {
+      date: '20',
+      label: 'Lørdag 20.11',
+    },
+    {
+      date: '21',
+      label: 'Søndag 21.11',
     },
   ],
   schedules: [],
