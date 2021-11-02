@@ -11,6 +11,7 @@ import spacing from '../util/spacing';
 import mediaQueries from '../util/mediaQueries';
 import NextUp from '../components/NextUp';
 import SundvoldenLogo from '../components/Icons/SundvoldenLogo';
+import GoogleMaps from '../layouts/GoogleMaps';
 
 const StyledLogoContainer = styled.div`
   text-align: center;
@@ -26,9 +27,7 @@ const Frontpage = () => (
       <ContentSection backgroundColor={colors.blueDark} color="white">
         <StyledLogoContainer>
           <SundvoldenLogo />
-          <Paragraph color="white">
-            {eventData.date}, {eventData.year}
-          </Paragraph>
+          <Paragraph color="white">{eventData.date}</Paragraph>
         </StyledLogoContainer>
       </ContentSection>
       <ContentSection
@@ -48,6 +47,7 @@ const Frontpage = () => (
         <NextUp />
       </ContentSection>
     </Content>
+    <GoogleMaps />
   </Layout>
 );
 
