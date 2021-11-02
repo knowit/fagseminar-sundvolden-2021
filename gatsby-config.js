@@ -20,7 +20,7 @@ module.exports = {
         apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: 'appuaJmB2L0UubKGW.',
+            baseId: 'appuaJmB2L0UubKGW',
             tableName: 'innsendte_foredrag',
             mapping: { speaker_image: 'fileNode' },
           },
