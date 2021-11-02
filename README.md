@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/knowit/online-fagseminar-mai-2021.svg?branch=master)](https://travis-ci.org/knowit/online-fagseminar-mai-2021)
+[![Build Status](https://travis-ci.com/knowit/fagseminar-sundvolden-2021.svg?branch=master)](https://travis-ci.com/knowit/fagseminar-sundvolden-2021)
 
-# Knowit Online Fagseminar Våren 2021
+# Knowit Sundvolden Fagseminar Høsten 2021
 
 Created with [Gatsby](https://www.gatsbyjs.org/).
 
@@ -13,11 +13,12 @@ yarn prettier
 ```
 
 ## Airtable-integration on build & configuring secrets
+
 The project uses airtable.com as backend. The following environment-variable should be set to build:
-* AIRTABLE_API_KEY
+
+- AIRTABLE_API_KEY
 
 Because of a limitation in the airtable-plugin, a dummy-row should be populated with all fields (usersIds = 'Dummy'. This row is filtered out by the graphql-call, see [src/graphql/airtable.js](airtable.js)
-
 
 ## Install gatsby
 
