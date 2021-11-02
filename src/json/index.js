@@ -21,7 +21,7 @@ export const eventData = {
   venue: 'Sundvolden hotell',
   adress: 'Dronningveien 2, 3531 Krokkleiva',
   city: 'Sundvolden',
-  country: 'Norway',
+  country: 'Norge',
   year,
   monthNumber: 11,
   season,

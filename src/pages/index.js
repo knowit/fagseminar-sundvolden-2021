@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { eventData } from '../json';
+import viewmodel, { eventData } from '../json';
 import Content from '../components/Content';
 import Paragraph from '../components/Paragraph';
 import CodeOfConduct from '../components/CodeOfConduct';
@@ -10,7 +10,7 @@ import ContentSection from '../components/ContentSection';
 import spacing from '../util/spacing';
 import mediaQueries from '../util/mediaQueries';
 import NextUp from '../components/NextUp';
-import OnlineLogo from '../components/Icons/OnlineLogo';
+import SundvoldenLogo from '../components/Icons/SundvoldenLogo';
 
 const StyledLogoContainer = styled.div`
   text-align: center;
@@ -25,9 +25,9 @@ const Frontpage = () => (
     <Content>
       <ContentSection backgroundColor={colors.blueDark} color="white">
         <StyledLogoContainer>
-          <OnlineLogo />
+          <SundvoldenLogo />
           <Paragraph color="white">
-            {eventData.startDate}, {eventData.year}
+            {eventData.date}, {eventData.year}
           </Paragraph>
         </StyledLogoContainer>
       </ContentSection>
@@ -38,11 +38,7 @@ const Frontpage = () => (
         <h1>
           Fagseminar {eventData.season.longCapitalized} {eventData.year}
         </h1>
-        <Paragraph>
-          <h3>På grunn av fortsatt pågående pandemi holder vi dette fagseminaret online!</h3><br/><br/>
-          {`Knowit Objectnet arrangerer to fagseminarer årlig. Det er de ansatte
-          selv som lager programmet.`}
-        </Paragraph>
+        <Paragraph>{viewmodel.meta.description}</Paragraph>
         <Paragraph>
           {`Tidligere har vi besøkt ${eventData.cities.join(', ')} etc.`}
         </Paragraph>
