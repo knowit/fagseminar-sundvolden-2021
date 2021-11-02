@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/knowit/fagseminar-sundvolden-2021.svg?branch=master)](https://travis-ci.com/knowit/fagseminar-sundvolden-2021)
+[![Build Status](https://app.travis-ci.com/knowit/fagseminar-sundvolden-2021.svg?branch=master)](https://app.travis-ci.com/github/knowit/fagseminar-sundvolden-2021)
 
 # Knowit Sundvolden Fagseminar Høsten 2021
 
